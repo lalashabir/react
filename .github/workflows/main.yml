@@ -1,0 +1,26 @@
+name: Deploy React Project
+
+on:
+  push:
+    branches:
+      - main  
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-22.04
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Install Dependencies
+      run: |
+        npm install
+
+    - name: Build React Project
+      run: |
+        npm run build
+
+    - name: Deploy React Project
+      run: |
+        curl -X POST http://127.0.0.1:3000/deploy-react
