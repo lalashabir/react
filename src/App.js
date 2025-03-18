@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-This is my demo project for deployment and it is automate when there is any update init.
+This is my demo project for deployment and it is automate when there is an update init and i wan to do commit init 
         </p>
         <a
           className="App-link"
