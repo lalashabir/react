@@ -28,4 +28,4 @@ jobs:
 
     - name: Deploy React App
       run: |
-        curl -X POST http://127.0.0.1:3002/deploy-react
+        curl -X POST http://127.0.0.1:3000/deploy-react
