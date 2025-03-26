@@ -1,12 +1,12 @@
 name: First Action
 on: workflow_dispatch
+
 jobs:
-first-job:
-runs-on: ubuntu-latest
-steps:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: printing my first job
+        run: echo "hello world"
 
-- name: printing my first job
-run: echo "hello world"
-
-- name: Print close 
-run: echo "job close bye"
+      - name: Print close
+        run: echo "job close bye"
